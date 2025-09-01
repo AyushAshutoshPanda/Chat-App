@@ -1,12 +1,52 @@
-# React + Vite
+# ⚛️ ChatApp Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of the ChatApp project, built with **React + Vite**.  
+It provides a modern, fast, and responsive UI for real-time messaging using **Socket.IO** and **Redux Toolkit**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 🔐 User authentication (Login/Register)
+- 🟢 Online/offline user status
+- 💬 Real-time 1-to-1 chat
+- 📡 Global state management with Redux Toolkit
+- 🎨 Responsive UI with TailwindCSS
+- ⚡ Lightning-fast development with Vite + HMR
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **React** – UI library  
+- **Redux Toolkit** – State management  
+- **TailwindCSS** – Styling  
+- **Vite** – Development & bundling  
+- **Socket.IO Client** – Real-time communication  
+
+---
+
+## 📂 Project Structure
+frontend/
+│── public/ # Static assets
+│── src/
+│ ├── components/ # Reusable UI components (Navbar, ChatBox, etc.)
+│ ├── pages/ # Page components (Login, Register, Chat)
+│ ├── redux/ # Redux slices (userSlice, messageSlice, socketSlice)
+│ ├── socket.js # Socket.IO client setup
+│ ├── App.jsx # Main app component
+│ └── main.jsx # Entry point
+│
+│── vite.config.js # Vite configuration
+│── package.json # Dependencies & scripts
+---
+Install dependencies
+npm install
+Start development server
+npm run dev
+App will run at http://localhost:5173/
+📝 Notes
+
+Make sure the backend server is running before testing chat features.
+
+Update the API base URL in config if required.
+
+Designed to work seamlessly with the backend (Node.js + Express + MongoDB).
